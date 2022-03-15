@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="css-todolist/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Romanesco&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- List roundBorder section -->
+    <div class="List roundBorder">
+        <!-- Date section -->
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+
+            <div id="dateText"></div>
+
+        </div><!-- End Date section -->
+        
+        <!-- Form section -->
+        <form onsubmit="addNewTask(event)">
+
+            <input type="text" name="taskText" autocomplete="off" placeholder="What are your plans for today?" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+            <button type="submit" class="oderButton roundBorder" onclick="renderOrderedTasks()">order</button>
+
+        </form><!-- End Form Section -->
+
+        <div id="tasksContainer"></div>
+
+    </div><!-- End List roundBorder section -->
+
+    <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="container">
+        <div class="copyright">
+          &copy; Copyright.<strong><span>2022 Lina L</span> | Designed by Lina Lozano</strong>
+        </div>
+      </div>
+   </footer><!-- End  Footer -->
+    
+   <!-- Template Main JS File -->
+<script type="text/javascript" src="js-todolist/todolist.js"></script> 
+</body>
+</html>
