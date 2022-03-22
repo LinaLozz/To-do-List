@@ -6,7 +6,7 @@
 </p>
 <p></p>
 <h3>
-  HOW DOES IT WORK?
+  HOW IT WORKS
 </h3>
 <p> 1. Write the task or plan.</p>
 <p> 2. Enter or click on ➕ to add it.</p>
